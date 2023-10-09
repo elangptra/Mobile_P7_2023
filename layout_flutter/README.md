@@ -19,7 +19,7 @@ Buatlah sebuah project flutter baru dengan nama layout_flutter. Atau sesuaikan s
 
 <b>Jawab:</b>
 
-![Alt text](/layout_flutter/images/image.png)
+![Alt text](images/image.png)
 
 ### <b>Langkah 2: Buka file lib/main.dart</b>
 
@@ -50,9 +50,9 @@ Buka file main.dart lalu ganti dengan kode berikut. Isi nama dan NIM Anda di tex
 
 <b>Jawab:</b>
 
-![Alt text](/layout_flutter/images/image-1.png)
+![Alt text](images/image-1.png)
 
-![Alt text](/layout_flutter/images/image-2.png)
+![Alt text](images/image-2.png)
 
 ### <b>Langkah 3: Identifikasi layout diagram</b>
 
@@ -66,15 +66,15 @@ Langkah pertama adalah memecah tata letak menjadi elemen dasarnya:
 
 Pertama, identifikasi elemen yang lebih besar. Dalam contoh ini, empat elemen disusun menjadi sebuah kolom: sebuah gambar, dua baris, dan satu blok teks.
 
-![Alt text](/layout_flutter/images/image-3.png)
+![Alt text](images/image-3.png)
 
 Selanjutnya, buat diagram setiap baris. Baris pertama, disebut bagian Judul, memiliki 3 anak: kolom teks, ikon bintang, dan angka. Anak pertamanya, kolom, berisi 2 baris teks. Kolom pertama itu memakan banyak ruang, sehingga harus dibungkus dengan widget yang Diperluas.
 
-![Alt text](/layout_flutter/images/image-4.png)
+![Alt text](images/image-4.png)
 
 Baris kedua, disebut bagian Tombol, juga memiliki 3 anak: setiap anak merupakan kolom yang berisi ikon dan teks.
 
-![Alt text](/layout_flutter/images/image-5.png)
+![Alt text](images/image-5.png)
 
 Setelah tata letak telah dibuat diagramnya, cara termudah adalah dengan menerapkan pendekatan bottom-up. Untuk meminimalkan kebingungan visual dari kode tata letak yang banyak bertumpuk, tempatkan beberapa implementasi dalam variabel dan fungsi.
 
@@ -124,7 +124,7 @@ Pertama, Anda akan membuat kolom bagian kiri pada judul. Tambahkan kode berikut 
 
 /* soal 3 */ Dua item terakhir di baris judul adalah ikon bintang, set dengan warna merah, dan teks "41". Seluruh baris ada di dalam Container dan beri padding di sepanjang setiap tepinya sebesar 32 piksel. Kemudian ganti isi body text ‘Hello World' dengan variabel titleSection seperti berikut:
 
-![Alt text](/layout_flutter/images/image-6.png)
+![Alt text](images/image-6.png)
 
 <b>Jawab:</b>
 
@@ -134,7 +134,7 @@ a. Soal 1
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
 
-![Alt text](/layout_flutter/images/image-7.png)
+![Alt text](images/image-7.png)
 
 b. Soal 2
 
@@ -153,7 +153,7 @@ b. Soal 2
         style: TextStyle(color: Colors.grey[600]),
     ),
 
-![Alt text](/layout_flutter/images/image-8.png)
+![Alt text](images/image-8.png)
 
 c. Soal 3
 
@@ -164,11 +164,11 @@ c. Soal 3
         ),
         const Text('41'),
 
-![Alt text](/layout_flutter/images/image-9.png)
+![Alt text](images/image-9.png)
 
 <b>Hasil running:</b>
 
-![Alt text](/layout_flutter/images/image-10.png)
+![Alt text](images/image-10.png)
 
 ## <b>Praktikum 2: Implementasi button row</b>
 
@@ -214,7 +214,7 @@ Karena kode untuk membangun setiap kolom hampir sama, buatlah metode pembantu pr
 
 <b>Jawab:</b>
 
-![Alt text](/layout_flutter/images/image-11.png)
+![Alt text](images/image-11.png)
 
 ### <b>Langkah 2: Buat widget buttonSection</b>
 
@@ -237,21 +237,21 @@ Bangun baris yang berisi kolom-kolom ini dengan memanggil fungsi dan set warna, 
 
 <b>Jawab:</b>
 
-![Alt text](/layout_flutter/images/image-12.png)
+![Alt text](images/image-12.png)
 
 ### <b>Langkah 3: Tambah button section ke body</b>
 
 Tambahkan variabel buttonSection ke dalam body seperti berikut:
 
-![Alt text](/layout_flutter/images/image-13.png)
+![Alt text](images/image-13.png)
 
 <b>Jawab:</b>
 
-![Alt text](/layout_flutter/images/image-14.png)
+![Alt text](images/image-14.png)
 
 <b>Hasil running:</b>
 
-![Alt text](/layout_flutter/images/image-15.png)
+![Alt text](images/image-15.png)
 
 ## <b>Praktikum 3: Implementasi text section</b>
 
@@ -278,18 +278,18 @@ Dengan memberi nilai softWrap = true, baris teks akan memenuhi lebar kolom sebel
 
 <b>Jawab:</b>
 
-![Alt text](/layout_flutter/images/image-16.png)
+![Alt text](images/image-16.png)
 
 <b>Langkah 2: Tambahkan variabel text section ke body</b>
 
 Tambahkan widget variabel textSection ke dalam body seperti berikut:
 
-![Alt text](/layout_flutter/images/image-17.png)
+![Alt text](images/image-17.png)
 
 <b>Jawab:</b>
 
-![Alt text](/layout_flutter/images/image-18.png)
+![Alt text](images/image-18.png)
 
 <b>Hasil running:</b>
 
-![Alt text](/layout_flutter/images/image-19.png)
+![Alt text](images/image-19.png)
